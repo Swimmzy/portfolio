@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav__item, .nav__button--link, .nav__button--button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  color: rgb(242, 135, 5);
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.nav__link {
+  color: rgb(242, 135, 5);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: rgba(242, 135, 5, 0.8);
+}
+
+.nav__button--button:hover {
+  background-color: rgba(3, 166, 74, 0.8);
+  color: rgba(242, 135, 5, 0.8);
+}
+
+.nav__button--button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgb(3, 166, 74);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+body {
+  background: rgb(3, 140, 62);
+  color: rgb(242, 135, 5);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+.section__title--intro {
+  font-weight: 300;
+}
+.section__title--intro--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.section__subtitle--intro, .section__subtitle--about {
+  background: rgb(3, 166, 74);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+}
+
+.intro {
+  position: relative;
+}
+.intro__img {
+  grid-area: img;
+  min-width: 250px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(242, 135, 5);
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  background: rgb(3, 166, 74);
+}
+.social-list__link {
+  text-decoration: none;
+  color: rgb(242, 135, 5);
+}
+.social-list__link:hover {
+  text-decoration: underline;
+}

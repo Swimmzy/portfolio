@@ -1,0 +1,142 @@
+@import './partials/pallette';
+@import './partials/fonts';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// NAV BAR
+
+.nav {
+  &__item , &__button--link, &__button--button {
+    font-family: $para-font;
+    font-weight: $fnt-weight-reg;
+    font-size: $fnt-sz-h2;
+    color: $clr-org;
+    list-style: none;
+  }
+}
+
+.nav {
+  &__item {
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+}
+
+.nav__link {
+  color: $clr-org;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: rgb($clr-org, 0.8);
+}
+
+.nav__button--button:hover {
+  background-color: rgb($clr-l-grn, 0.8);
+  color: rgb($clr-org, 0.8);
+}
+
+.nav__button--button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: $clr-l-grn;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+
+
+body {
+  background: $clr-dk-grn;
+  color: $clr-org;
+  margin: 0;
+  font-family: $header-font;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+strong { font-weight: $fnt-weight-bold;}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: $fnt-sz-h1;}
+h2 {font-size: $fnt-sz-h2;}
+h3 {font-size: $fnt-sz-h3;}
+
+.section__title {
+  margin-bottom: .25em;
+  &--intro {
+    font-weight: $fnt-weight-reg;
+    &--intro strong {
+      display: block;
+    }
+  }
+}
+.section__subtitle {
+  margin: 0;
+  font-size: $fnt-sz-h3;
+  &--intro, &--about {
+    background: $clr-l-grn;
+    font-family: $header-font;
+    margin-bottom: 1em;
+  }
+}
+
+.intro {
+  position: relative;
+  &__img {
+    grid-area: img;
+    min-width: 250px;
+  }
+}
+
+// FOOTER
+
+.footer-link {
+  text-decoration: none;
+  color: $clr-org;
+}
+
+ .footer-link:hover {
+   text-decoration: underline;
+ }
+
+ .social-list {
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  background: $clr-l-grn;
+  &__link {
+    text-decoration: none;
+    color: $clr-org;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+ }
